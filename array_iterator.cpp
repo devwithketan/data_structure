@@ -24,7 +24,6 @@ public:
 		++(*this);
 		return temp;
 	}
-
 	ArrayItrator& operator--()
 	{
 		m_ptr--;
@@ -79,7 +78,6 @@ public:
 	{
 		return m_Data[index];
 	}
-
 	const T& operator[](size_t index) const
 	{
 		return m_Data[index];
@@ -96,7 +94,6 @@ public:
 	{
 		return Iterator(m_Data);
 	}
-
 	Iterator end()
 	{
 		return Iterator(m_Data, S);
@@ -123,5 +120,4 @@ int main()
 		cout << *it << endl;
 		it++;
 	}
-
 }
