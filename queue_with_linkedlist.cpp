@@ -45,12 +45,14 @@ public:
 		back_node = node;
 		s++;
 	}
+
 	bool empty()
 	{
 		if (!front_node) return true;
 		return false;
 
 	}
+
 	void pop()
 	{
 		if (empty())
