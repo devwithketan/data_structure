@@ -17,6 +17,15 @@ public:
 		back_node = nullptr;
 		s = 0;
 	}
+
+	~Queue()
+	{
+		while (!empty())
+		{
+			pop();
+		}
+	}
+
 	void push(const int& val)
 	{
 		Node* node = new Node();
