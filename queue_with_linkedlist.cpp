@@ -28,7 +28,7 @@ public:
 
 	void push(const int& val)
 	{
-		Node* node = new Node();
+		Node* node = new Node(); // this needs to replace with smart pointer
 		node->data = val;
 		node->next = nullptr;
 
